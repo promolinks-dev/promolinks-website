@@ -1,0 +1,207 @@
+.small-meteor-container div[class*=meteor] {
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to right, rgb(255, 163, 214), rgba(255, 255, 255, 0));
+}
+
+.small-meteor-container div[class*=meteor]:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -2px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-1 {
+    top: 137px;
+    left: 67%;
+    animation: meteor 3.5s linear infinite;
+}
+
+.meteor-2 {
+    top: 87px;
+    left: 50%;
+    animation: meteor 9.1s linear infinite;
+}
+
+.meteor-3 {
+    top: 121px;
+    left: 14%;
+    animation: meteor 3.2s linear infinite;
+}
+
+.meteor-4 {
+    top: 121px;
+    left: 69%;
+    animation: meteor 9s linear infinite;
+}
+
+.meteor-5 {
+    top: 232px;
+    left: 88%;
+    animation: meteor 9.1s linear infinite;
+}
+
+.meteor-6 {
+    top: 216px;
+    left: 11%;
+    animation: meteor 5.5s linear infinite;
+}
+
+.meteor-7 {
+    top: 280px;
+    left: 88%;
+    animation: meteor 7s linear infinite;
+}
+
+.meteor-8 {
+    top: 69px;
+    left: 30%;
+    animation: meteor 3.5s linear infinite;
+}
+
+.meteor-9 {
+    top: 188px;
+    left: 16%;
+    animation: meteor 6.1s linear infinite;
+}
+
+.meteor-10 {
+    top: 220px;
+    left: 24%;
+    animation: meteor 4s linear infinite;
+}
+
+.meteor-11 {
+    top: 258px;
+    left: 88%;
+    animation: meteor 7.5s linear infinite;
+}
+
+.meteor-12 {
+    top: 203px;
+    left: 20%;
+    animation: meteor 7.5s linear infinite;
+}
+
+.meteor-13 {
+    top: 188px;
+    left: 48%;
+    animation: meteor 7.3s linear infinite;
+}
+
+.meteor-14 {
+    top: 137px;
+    left: 64%;
+    animation: meteor 6.6s linear infinite;
+}
+
+.meteor-15 {
+    top: 70px;
+    left: 18%;
+    animation: meteor 3.3s linear infinite;
+}
+
+@keyframes meteor {
+    0% {
+        opacity: 1;
+        margin-top: -300px;
+        margin-right: -300px;
+    }
+
+    12% {
+        opacity: 0;
+    }
+
+    15% {
+        margin-top: 300px;
+        margin-left: -600px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes shiny-meteor {
+    0% {
+        opacity: 1;
+        margin-top: -300px;
+        margin-right: -300px;
+    }
+
+    32% {
+        opacity: 0;
+    }
+
+    35% {
+        margin-top: 300px;
+        margin-left: -600px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* shiny meteor */
+.meteor-container [class*=shiny-meteor]{
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 40%;
+}
+.meteor-container .shiny-meteor-1 {
+    top: 137px;
+    left: 92%;
+    width: 28%;
+    animation: shiny-meteor 2.5s ease-in infinite;
+}
+
+.meteor-container .shiny-meteor-2 {
+    top: 87px;
+    left: 30%;
+    width: 18%;
+    animation: shiny-meteor 17.1s linear infinite;
+}
+
+.meteor-container .shiny-meteor-3 {
+    top: 121px;
+    left:46%;
+    animation: shiny-meteor 7.2s ease-out infinite;
+}
+
+/* The Moon animation */
+@keyframes moon-motion {
+    0%{ }
+
+    50%{
+        transform: translateY(10px) scale(1.02);
+    }
+
+    100%{}
+}
+.moon-container img{
+    animation: moon-motion 5.2s ease-out infinite;
+    animation-delay: 0.7s;
+}
+
+/* Promolinks logo animation */
+@keyframes moon-motion {
+    0%{ }
+
+    50%{
+        transform: translateY(20px) scale(1.02);
+    }
+
+    100%{}
+}
+.logo-container{
+    animation: moon-motion 3.2s ease-out infinite;
+    animation-delay: 0.1s;
+}
